@@ -1,13 +1,13 @@
-package com.br.dlm.bmiproject;
+package com.br.dlm.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BmiProjectApplication {
+public class ApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BmiProjectApplication.class, args);
+		SpringApplication.run(ApiApplication.class, args);
 	}
 
 }

@@ -1,10 +1,10 @@
-package com.br.dlm.bmiproject;
+package com.br.dlm.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BmiProjectApplicationTests {
+class ApiApplicationTests {
 
 	@Test
 	void contextLoads() {
