@@ -1,13 +1,10 @@
 package com.append.backend.services;
 
 import com.append.backend.dto.ReserveDTO;
-import com.append.backend.dto.ReserveDTO;
 import com.append.backend.entities.House;
-import com.append.backend.entities.Reserve;
 import com.append.backend.entities.Reserve;
 import com.append.backend.entities.User;
 import com.append.backend.repositories.HouseRepository;
-import com.append.backend.repositories.ReserveRepository;
 import com.append.backend.repositories.ReserveRepository;
 import com.append.backend.repositories.UserRepository;
 import com.append.backend.services.exceptions.DataBaseException;
