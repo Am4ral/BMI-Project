@@ -17,4 +17,6 @@ public class Pacient {
     @Column(name = "id_pacient")
     private Long idPacient;
 
+
+
 }
