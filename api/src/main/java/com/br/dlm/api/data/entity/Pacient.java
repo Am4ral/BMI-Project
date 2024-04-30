@@ -12,11 +12,9 @@ import lombok.Setter;
 @Entity
 @Table(name = "pacient")
 public class Pacient {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_pacient")
     private Long idPacient;
-
-
-
 }
