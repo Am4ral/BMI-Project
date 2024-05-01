@@ -14,20 +14,20 @@ import java.util.Date;
 public class Measurement {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_measurement")
     private Long idMeasurement;
 
     @Column(name = "height")
-    private Double height;
+    private double height;
 
     @Column(name = "weight")
-    private Double weight;
+    private double weight;
 
     @Column(name = "bmi")
-    private Double bmi;
+    private double bmi;
 
-    @Column(name = "measurementDate")
+    @Column(name = "measurement_date")
     private Date measurementDate;
 
     @ManyToOne()
@@ -38,8 +38,12 @@ public class Measurement {
     public Measurement(MeasurementRequestDTO measurementRequestDTO){
         this.height = measurementRequestDTO.height();
         this.weight = measurementRequestDTO.weight();
-        this.bmi = measurementRequestDTO.bmi();
+        this.bmi = calculateBmi();
         this.measurementDate = new Date();
         this.pacient = measurementRequestDTO.pacient();
+    }
+
+    public double calculateBmi(){
+        return this.weight / (this.height * this.height);
     }
 }
