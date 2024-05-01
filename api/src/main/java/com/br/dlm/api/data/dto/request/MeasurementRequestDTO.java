@@ -1,19 +1,16 @@
 package com.br.dlm.api.data.dto.request;
 
 import com.br.dlm.api.data.entity.Pacient;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 
 public record MeasurementRequestDTO(
 
-        @NotBlank(message = "Height could not be empty")
-        Double height,
+        @NotNull(message = "Height could not be empty")
+        double height,
 
-        @NotBlank(message = "Weight could not be empty")
-        Double weight,
-
-        @NotBlank(message = "BMI could not be empty")
-        Double bmi,
+        @NotNull(message = "Weight could not be empty")
+        double weight,
 
         Pacient pacient
 ) {
