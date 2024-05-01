@@ -32,7 +32,7 @@ CREATE TABLE measurement (
      height FLOAT NOT NULL,
      weight FLOAT NOT NULL,
      bmi FLOAT,
-     measurementDate DATE,
+     measurement_date DATE,
      id_pacient BIGINT,
      FOREIGN KEY (id_pacient) REFERENCES pacient(id_pacient)
 );
