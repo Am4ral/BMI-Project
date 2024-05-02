@@ -1,7 +1,6 @@
 import './input.css'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import SideBar from "./components/SideBar";
 import {
     BrowserRouter as Router,
     Routes,
@@ -14,7 +13,7 @@ function App() {
       <Router>
         <Routes>
             <Route path="/" element={<Login/>} />
-            <Route path="/home" element={<><SideBar /><Home/></>} />
+            <Route path="/home" element={<Home/>} />
         </Routes>
       </Router>
   )

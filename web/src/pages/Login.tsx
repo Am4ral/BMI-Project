@@ -9,12 +9,13 @@ export default function Login(){
     function nav() {
         navigate('/home');
     }
+
     return (
-        <section className={"h-screen w-screen flex flex-row justify-end"}>
+        <section className={"h-screen w-screen flex flex-row justify-center desktop:justify-end"}>
             <div className={"bg-login-bg blur-sm h-full w-full bg-cover bg-no-repeat absolute z-0"}/>
-            <div className={"flex flex-col bg-highlightBlue h-full w-1/3 justify-center gap-20 bg-opacity-25 relative z-1 "}>
-                <img src={Logo} alt="Logo" className={"w-1/3 self-center drop-shadow-xl"}/>
-                <div className={"bg-white p-8 bg-absoluteWhite w-3/5 self-center rounded-3xl flex flex-col gap-20 sha"}>
+            <div className={"flex flex-col desktop:bg-highlightBlue h-full desktop:w-1/3 justify-center gap-20 desktop:bg-opacity-25 relative"}>
+                <img src={Logo} alt="Logo" className={"desktop:w-1/3 w-1/2 self-center drop-shadow-xl"}/>
+                <div className={"bg-white p-8 bg-absoluteWhite self-center rounded-3xl flex flex-col gap-20 sha"}>
                     <h1 className={"text-5xl font-semibold text-center font-montserrat-alternates text-darkBlue"}>login</h1>
                     <form className={"flex flex-col gap-16"}>
                         <div className={"flex flex-col gap-16"}>
